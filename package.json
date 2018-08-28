@@ -1,0 +1,30 @@
+{
+  "name": "spline-motion-profiler",
+  "version": "1.0.0",
+  "description": "Generates drive train profile data from cardinal splines",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GowanR/Spline-Motion-Profiler.git"
+  },
+  "keywords": [
+    "spline",
+    "motion",
+    "profiling",
+    "drive",
+    "profiling"
+  ],
+  "author": "GowanR",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/GowanR/Spline-Motion-Profiler/issues"
+  },
+  "homepage": "https://github.com/GowanR/Spline-Motion-Profiler#readme",
+  "dependencies": {
+    "cardinal-spline-js": "^2.3.9",
+    "express": "^4.16.3"
+  }
+}
