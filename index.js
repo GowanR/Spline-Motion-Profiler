@@ -17,7 +17,7 @@ function get_perpendicular_vector_1(vector) {
 function get_perpendicular_vector_2(vector) {
     return p(vector.y, -vector.x);
 }
-var base = 10;
+var base = 30;
 function draw_computed_spline(points) {
     var outPoints = getCurvePoints(points);
     var seperated_points = []
@@ -66,9 +66,20 @@ document.onmousedown = function mousedown(e) {
     point_cloud.push(y);
     
     ctx.fillRect(x,y,1,1);
+
+    ctx.save();
+    ctx.strokeStyle = 'rgba(0,0,0,1)';
+    ctx.fillStyle = 'rgba(146, 251, 155,0.7)';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.arc(x,y,10,0,2*Math.PI);
+    ctx.fill()
+    ctx.stroke();
+    ctx.restore();
     
 }
 document.getElementById('b').onclick = function(){
+    point_cloud.pop();
     draw_computed_spline(point_cloud);
-
+    
 }
